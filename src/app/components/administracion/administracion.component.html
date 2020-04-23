@@ -1,0 +1,51 @@
+<nav class="navbar navbar-expand-lg white-bg">
+  <a class="navbar-brand text-muted" routerLink="inicio-admin">Administracion</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-muted" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <strong>Clientes</strong>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" routerLink="clientes"><i class="fa fa-list" aria-hidden="true"></i> Lista de Clientes</a>
+          <a class="dropdown-item" href="#"><i class="fa fa-user-plus" aria-hidden="true"></i> Nuevo Cliente</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-muted" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <strong>Proveedores</strong>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+          <a class="dropdown-item" routerLink="proveedores"><i class="fa fa-list" aria-hidden="true"></i> Lista de Proveedores</a>
+          <a class="dropdown-item" href="#"><i class="fa fa-user-plus" aria-hidden="true"></i> Nuevo Proveedores</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-muted" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <strong>Oportunidades</strong>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+          <a class="dropdown-item" routerLink="oportunidades"><i class="fa fa-list" aria-hidden="true"></i> Lista de Oportunidades</a>
+          <a class="dropdown-item" href="#"><i class="fa fa-user-plus" aria-hidden="true"></i> Nuevo Oportunidad</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-muted" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <strong>Contactos</strong>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
+          <a class="dropdown-item" ><i class="fa fa-list" aria-hidden="true"></i> Lista de Contactos</a>
+          <a class="dropdown-item" ><i class="fa fa-user-plus" aria-hidden="true"></i> Nuevo Contacto</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+  <router-outlet></router-outlet>
+
+

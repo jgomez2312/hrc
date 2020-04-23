@@ -24,9 +24,20 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/assets/font-awesome/css/font-awesome.min.css",
+              "src/assets/css/animate.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/jquery-3.1.1.min.js",
+              "node_modules/popper.js/dist/umd/popper.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "node_modules/metismenu/dist/metisMenu.js",
+              "src/assets/js/jquery.slimscroll.min.js",
+              "src/assets/js/inspinia.js",
+              "src/assets/js/pace.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -119,6 +130,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "hrc"
+    }
+  },
+  "defaultProject": "hrc",
+  "cli": {
+    "analytics": false
+  }
 }
