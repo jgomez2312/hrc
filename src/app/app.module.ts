@@ -4,10 +4,10 @@ import { NgModule } from '@angular/core';
 /* Import Class*/
 import { HttpClientModule } from '@angular/common/http';
 import { ROUTING } from './app.routing';
-import { FormsModule} from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 
 /* Import Servicios */
-import { ClienteService } from './components/administracion/clientes/cliente.service';
+import { EmpresaService } from './components/administracion/inicio/empresa.service';
 
 /* Import Modules */
 import { AppComponent } from './app.component';
@@ -27,6 +27,7 @@ import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { InicioComponent } from './components/administracion/inicio/inicio.component';
 import { OportunidadesComponent } from './components/administracion/oportunidades/oportunidades.component';
 import { FormEmpresasComponent } from './components/administracion/clientes/form.empresas.component';
+
 
 
 @NgModule({
@@ -52,11 +53,11 @@ import { FormEmpresasComponent } from './components/administracion/clientes/form
   imports: [
     BrowserModule,
     HttpClientModule,
-    ROUTING,
-    FormsModule
+    FormsModule,
+    ROUTING
   ],
   providers: [
-    ClienteService
+    EmpresaService
   ],
   bootstrap: [AppComponent]
 })

@@ -11,6 +11,7 @@ import {ClientesComponent} from './components/administracion/clientes/clientes.c
 import {ProveedoresComponent} from './components/administracion/proveedores/proveedores.component';
 import {InicioComponent} from './components/administracion/inicio/inicio.component';
 import {OportunidadesComponent} from './components/administracion/oportunidades/oportunidades.component';
+import { FormEmpresasComponent } from './components/administracion/clientes/form.empresas.component';
 
 
 const ROUTES: Routes = [
@@ -21,7 +22,8 @@ const ROUTES: Routes = [
       {path: 'inicio-admin', component: InicioComponent},
       {path: 'clientes', component: ClientesComponent},
       {path: 'proveedores', component: ProveedoresComponent},
-      {path: 'oportunidades', component: OportunidadesComponent}
+      {path: 'oportunidades', component: OportunidadesComponent},
+      {path: 'empresa/nueva', component: FormEmpresasComponent}
     ]},
   {path: 'configuracion', component: ConfiguracionComponent},
   {path: 'contabilidad', component: ContabilidadComponent},

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {Oportunidad} from './oportunidad';
-import {OportunidadService} from './oportunidad.service';
+import { Empresa } from '../inicio/empresa';
+import { EmpresaService } from '../inicio/empresa.service';
 
 @Component({
   selector: 'app-oportunidades',
@@ -8,11 +8,11 @@ import {OportunidadService} from './oportunidad.service';
 })
 export class OportunidadesComponent implements OnInit {
 
-  oportunidad: Oportunidad[];
-  constructor(private oportunidadService: OportunidadService) { }
+  empresas: Empresa[];
+  constructor(private empresaService: EmpresaService) { }
 
   ngOnInit(): void {
-    this.oportunidadService.getOportunidad().subscribe((oportunidad) => this.oportunidad = oportunidad);
+    this.empresaService.getOportunidades().subscribe((empresas) => this.empresas = empresas);
   }
 
 }
