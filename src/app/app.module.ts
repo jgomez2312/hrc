@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 /* Import Class*/
 import { HttpClientModule } from '@angular/common/http';
 import { ROUTING } from './app.routing';
+import { FormsModule} from '@angular/forms';
 
 /* Import Servicios */
 import { ClienteService } from './components/administracion/clientes/cliente.service';
@@ -25,6 +26,7 @@ import { ConfiguracionComponent } from './components/configuracion/configuracion
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { InicioComponent } from './components/administracion/inicio/inicio.component';
 import { OportunidadesComponent } from './components/administracion/oportunidades/oportunidades.component';
+import { FormEmpresasComponent } from './components/administracion/clientes/form.empresas.component';
 
 
 @NgModule({
@@ -44,12 +46,14 @@ import { OportunidadesComponent } from './components/administracion/oportunidade
     ConfiguracionComponent,
     ProyectosComponent,
     InicioComponent,
-    OportunidadesComponent
+    OportunidadesComponent,
+    FormEmpresasComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    ROUTING
+    ROUTING,
+    FormsModule
   ],
   providers: [
     ClienteService
